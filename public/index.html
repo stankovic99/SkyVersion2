@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+      
+    <style>
+    @keyframes scale-loop {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+    .animate-scale-loop {
+      animation: scale-loop 20s infinite alternate;
+    }
+    </style>
+</head>
+<body>
+    <section class="relative h-screen overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 bg-cover bg-center transform scale-100 transition-transform duration-[5000ms] ease-in-out animate-scale-loop" style="background-image: url('img/slika1.jpg');"></div>
+        <div class="absolute inset-0 bg-black/60 flex items-center justify-center">
+          <h1 class="text-white text-4xl font-bold">Вкус, забава и летна магија!</h1>
+        </div>
+      </section>
+      
+    <h1>Our Menu</h1>
+    <div id="category-container"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

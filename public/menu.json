@@ -1,0 +1,21 @@
+{
+  "food": {
+    "salads": [
+      { "name": "Greek Salad", "description": "Fresh veggies with feta", "price": 5.99, "image": "greek-salad.jpg" },
+      { "name": "Caesar Salad", "description": "Romaine lettuce with croutons", "price": 6.99, "image": "caesar.jpg" }
+    ],
+    "desserts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ]
+  },
+  "drinks": {
+    "cocktails": [
+      { "name": "Mojito", "description": "Rum, lime, and mint", "price": 7.99, "image": "mojito.jpg" }
+    ]
+  },
+  "Others": {
+    "salads": [
+      { "name": "Mojito", "description": "Rum, lime, and mint", "price": 7.99, "image": "mojito.jpg" }
+    ]
+  }
+}
