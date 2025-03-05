@@ -1,1 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 @import "tailwindcss";
+
+@theme{
+  --font-playfair: "Playfair Display", serif;
+  --font-lato: "Lato", sans-serif;
+  --font-robotoFlex: "Roboto Flex", sans-serif;
+}
+
+@layer base {
+  body {
+      @apply font-robotoFlex;
+  }
+}
+
+@layer components {
+  .sub-heading{
+    @apply text-lg text-gray-500 font-lato uppercase tracking-wide font-light;
+  }
+  .main-heading{
+    @apply text-4xl md:text-5xl font-playfair font-bold text-gray-900 mt-2;
+  }
+  .h3-heading{
+    @apply text-3xl md:text-4xl font-playfair font-bold text-gray-900 mt-2 mb-5;
+  }
+  .btn-primary {
+      @apply px-12 py-3 border-1 rounded-full text-white uppercase font-light tracking-widest transition duration-300;
+  }
+  .btn-secondary{
+    @apply px-12 py-3 border-1 rounded-full text-gray-950 uppercase tracking-widest transition duration-300 bg-gray-100 ;
+  }
+}
+
+@layer utilities {
+  @keyframes scale-loop {
+    0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+  }
+
+  .animate-scale-loop {
+      @apply animate-[scale-loop_20s_infinite_alternate_ease-in-out];
+  }
+}

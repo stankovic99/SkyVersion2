@@ -5,33 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Menu</title>
     <link rel="stylesheet" href="style.css">
-      
-    <style>
-    @keyframes scale-loop {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.05);
-      }
-    }
-    .animate-scale-loop {
-      animation: scale-loop 20s infinite alternate;
-    }
-    </style>
 </head>
 <body>
-    <section class="relative h-screen overflow-hidden flex items-center justify-center">
-        <div class="absolute inset-0 bg-cover bg-center transform scale-100 transition-transform duration-[5000ms] ease-in-out animate-scale-loop" style="background-image: url('img/slika1.jpg');"></div>
-        <div class="absolute inset-0 bg-black/60 flex items-center justify-center">
-          <h1 class="text-white text-4xl font-bold">Вкус, забава и летна магија!</h1>
-        </div>
-      </section>
+  <nav id="navbar" class="fixed top-0 w-full z-50 text-gray-200 transition-transform duration-300 navbar">
+
+    <div class="md:max-w-screen-xl mx-auto flex justify-between items-center px-6 py-4 ">
+
+      <ul class="hidden lg:flex uppercase font-light tracking-widest space-x-6">
+        <li><a href="#home" class="px-4 py-2 hover:underline hover:underline-offset-6 font-sans tracking-wider">Почетна</a></li>
+        <li><a href="#services" class="px-4 py-2 hover:underline hover:underline-offset-6">Услуги</a></li>
+        <li><a href="#menu" class="px-4 py-2 hover:underline hover:underline-offset-6">Мени</a></li>
+      </ul> 
+      <a href="#home" class="w-14 "><img src="img/WhiteLogoName.svg" alt="Logo" srcset=""></img></a>
       
-    <h1>Our Menu</h1>
-    <div id="category-container"></div>
+      <ul class="hidden lg:flex uppercase font-light tracking-widest space-x-6">
+        <li><a href="#gallery" class="px-4 py-2 hover:underline hover:underline-offset-6">Галерија</a></li>
+        <li><a href="#location" class="px-4 py-2 hover:underline hover:underline-offset-6">Локација</a></li>
+        <li><a href="#contact" class="px-4 py-2 hover:underline hover:underline-offset-6">Контакт</a></li>
+      </ul> 
+        <button id="hamburger" class="lg:hidden focus:outline-none">
+            <svg class="w-8 h-8" xmlns="" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+    <ul id="mobile-menu" class="absolute uppercase tracking-widest top-16 left-0 w-full bg-gray-900 text-white text-center hidden lg:hidden">
+        <li><a href="#home" class="block px-4 py-4 border-b border-white/30 hover:border-white/70 transition-all">Почетна</a></li>
+        <li><a href="#services" class="block px-4 py-4 border-b border-white/30 hover:border-white/70 transition-all">Услуги</a></li>
+        <li><a href="#menu" class="block px-4 py-4 border-b border-white/30 hover:border-white/70 transition-all">Мени</a></li>
+        <li><a href="#gallery" class="block px-4 py-4 border-b border-white/30 hover:border-white/70 transition-all">Галерија</a></li>
+        <li><a href="#location" class="block px-4 py-4 border-b border-white/30 hover:border-white/70 transition-all">Локација</a></li>
+        <li><a href="#contact" class="block px-4 py-4 border-b border-white/30 hover:border-white/70 transition-all">Контакт</a></li>
+    </ul>
+  </nav>
+
+  <section class="relative h-screen overflow-hidden flex items-center justify-center">
+    <!-- Background images container -->
+    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-[20000ms] scale-100 animate-bg-slider fade-in"></div>
+  
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/60 flex items-start justify-center flex-col">
+      <div class="md:max-w-screen-xl mx-auto w-full px-6">
+        <h1 class="text-white text-8xl">Вкус</h1>
+        <h1 class="text-8xl text-orange-100 ml-10">забава</h1>
+        <h1 class="text-white text-8xl">летна магија</h1>
+      </div>
+    </div>
+  
+    <!-- Navigation arrows -->
+    <button id="prev" class="absolute left-5 top-1/2 -translate-y-1/2 bg-black/30 p-3 rounded-full">
+      <span class="text-white text-3xl">←</span>
+    </button>
+    <button id="next" class="absolute right-5 top-1/2 -translate-y-1/2 bg-black/30 p-3 rounded-full">
+      <span class="text-white text-3xl">→</span>
+    </button>
+  </section>
+  
+  <script>
+    
+  </script>
+  
+  <style>
+    .animate-bg-slider {
+      background-size: cover;
+      background-position: center;
+      transition: transform 10s ease-in-out, opacity 1.5s ease-in-out;
+    }
+  
+    /* Keep the image centered while scaling */
+    .scale-105 {
+      transform: scale(1.1);
+      transform-origin: center center;
+    }
+  
+    /* Smooth fade effect */
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+  
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+  
+  
+  
+    
+  <h1>Our Menu</h1>
+  <div id="category-container"></div>
 
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
