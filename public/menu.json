@@ -2,19 +2,85 @@
   "food": {
     "salads": [
       { "name": "Greek Salad", "description": "Fresh veggies with feta", "price": 5.99, "image": "greek-salad.jpg" },
-      { "name": "Caesar Salad", "description": "Romaine lettuce with croutons", "price": 6.99, "image": "caesar.jpg" }
+      { "name": "Caesar Salad", "description": "Romaine lettuce with croutons", "price": 6.99, "image": "caesar.jpg" },
+      { "name": "Greek Salad", "description": "Fresh veggies with feta", "price": 5.99, "image": "greek-salad.jpg" },
+      { "name": "Greek Salad", "description": "Fresh veggies with feta", "price": 5.99, "image": "greek-salad.jpg" },
+      { "name": "Greek Salad", "description": "Fresh veggies with feta", "price": 5.99, "image": "greek-salad.jpg" },
+      { "name": "Greek Salad", "description": "Fresh veggies with feta", "price": 5.99, "image": "greek-salad.jpg" },
+      { "name": "Greek Salad", "description": "Fresh veggies with feta", "price": 5.99, "image": "greek-salad.jpg" }
     ],
     "desserts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "asd": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "asds": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "asdsa": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "asddsa": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "dessqweerts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "we": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "deweqsserts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "eewew": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "tdfsdfsd": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "desbdfdbfbdserts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "bdfsdfsdf": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "asdsd": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "dqweeqesserts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "desserrrrts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "desseqqwrts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "desweeserts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "dessetttrts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "desseqqweerts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "desqweeqwserts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "dessertqweqwes": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "dessqweqweqeerts": [
+      { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
+    ],
+    "dessqwerts": [
       { "name": "Chocolate Cake", "description": "Rich chocolate cake", "price": 4.99, "image": "choco-cake.jpg" }
     ]
   },
   "drinks": {
     "cocktails": [
-      { "name": "Mojito", "description": "Rum, lime, and mint", "price": 7.99, "image": "mojito.jpg" }
-    ]
-  },
-  "Others": {
-    "salads": [
       { "name": "Mojito", "description": "Rum, lime, and mint", "price": 7.99, "image": "mojito.jpg" }
     ]
   }
