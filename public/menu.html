@@ -1,36 +1,18 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="subcategory-container"></div>
-    <script src="menu.js"></script>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Sky Restaurant</title>
-    <!-- Tailwind CSS CDN (assuming you're using it) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- jQuery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Your custom menu.js -->
     <script src="menu.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-lightbrown">
-    <!-- Navbar (copy your existing navbar here) -->
     <nav id="navbar" class="fixed top-0 w-full z-50 text-lightbrown bg-dark">
         <div class="md:max-w-screen-xl mx-auto flex justify-between items-center px-4">
           <a href="#home" class="w-16 h-full"><img src="img/Logo.svg" alt="Logo"></a>
           
-          <!-- Desktop Nav -->
           <ul class="hidden lg:flex items-center justify-center uppercase font-light tracking-widest gap-8 h-14">
             <li><a href="#home" class="px-2 hover:underline hover:underline-offset-8">Почетна</a></li>
             <li class="relative group h-full">
@@ -40,15 +22,11 @@
                 <li><a href="#party-menu" class="block px-4 py-3 normal-case hover:bg-gray-700">Прослави мени</a></li>
               </ul>
             </li>
-            <li><a href="#services" class="px-2 hover:underline hover:underline-offset-8">Услуги</a></li>
+            <li><a href="index.html#services" class="px-2 hover:underline hover:underline-offset-8">Услуги</a></li>
             <li><a href="#gallery" class="px-2 hover:underline hover:underline-offset-8">Галерија</a></li>
             <li><a href="#location" class="px-2 hover:underline hover:underline-offset-8">Локација</a></li>
             <li><a href="#contact" class="px-2 hover:underline hover:underline-offset-8">Контакт</a></li>
-            
-            
           </ul>
-      
-          <!-- Hamburger Button -->
           <button id="hamburger" class="lg:hidden h-14">
             <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -56,7 +34,6 @@
           </button>
         </div>
       
-        <!-- Mobile Menu -->
         <ul id="mobile-menu" class="absolute uppercase tracking-widest top-auto left-0 w-full bg-dark text-white text-center hidden transition">
           <li><a href="#home" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Почетна</a></li>
           <li><a href="#services" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Услуги</a></li>
@@ -80,7 +57,6 @@
         </ul>
       </nav>
 
-    <!-- Menu Section -->
     <section class="lg:py-24 py-16 text-center">
         <div class="md:max-w-screen-xl w-full mx-auto px-4">
             <p class="text-darkbrown text-2xl md:text-5xl font-greatvibes tracking-wider">мени</p>

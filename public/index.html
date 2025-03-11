@@ -37,26 +37,20 @@
         </li>
         <li><a href="#services" class="px-2 hover:underline hover:underline-offset-8">Услуги</a></li>
         <li><a href="#gallery" class="px-2 hover:underline hover:underline-offset-8">Галерија</a></li>
-        <li><a href="#location" class="px-2 hover:underline hover:underline-offset-8">Локација</a></li>
+        <li><a href="#about" class="px-2 hover:underline hover:underline-offset-8">За нас</a></li>
         <li><a href="#contact" class="px-2 hover:underline hover:underline-offset-8">Контакт</a></li>
-        
-        
-      </ul>
-  
-      <!-- Hamburger Button -->
+      </ul>  
       <button id="hamburger" class="lg:hidden h-14">
         <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
     </div>
-  
-    <!-- Mobile Menu -->
     <ul id="mobile-menu" class="absolute uppercase tracking-widest top-auto left-0 w-full bg-dark text-white text-center hidden transition">
       <li><a href="#home" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Почетна</a></li>
       <li><a href="#services" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Услуги</a></li>
       <li><a href="#gallery" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Галерија</a></li>
-      <li><a href="#location" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Локација</a></li>
+      <li><a href="#about" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">За нас</a></li>
       <li><a href="#contact" class="block px-4 py-4 border-b border-white/30 hover:bg-gray-700">Контакт</a></li>
       <li id="menu-item" class="relative group">
         <button id="menu-button" class="w-full px-4 py-4 border-b border-white/30 hover:bg-gray-700 flex uppercase tracking-widest font-mulish justify-center items-center">
@@ -75,126 +69,119 @@
     </ul>
   </nav>
 
- <section class="relative h-screen overflow-hidden flex items-center justify-center">
-    <!-- Background images container (Two Layers for Smooth Fade) -->
+ <section id="home" class="relative h-screen overflow-hidden flex items-center justify-center">
     <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100 animate-bg-slider" id="bg1"></div>
     <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0 animate-bg-slider" id="bg2"></div>
 
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/60 flex items-start justify-center flex-col">
+    <div class="absolute inset-0 bg-black/70 flex items-start justify-center flex-col">
       <div class="md:max-w-screen-xl mx-auto w-full px-6 text-center">
-        <p class="md:text-5xl text-3xl font-greatvibes text-lightbrown tracking-wider">добре дојде</p>
-        <h1 class="text-white md:text-7xl text-5xl font-playfair uppercase font-light">Вкус, забава и летна магија</h1>
-        <a href="menu.html" class="mt-12 inline-block px-6 py-3 uppercase bg-lightbrown text-dark hover:scale-105 text-lg rounded-lg hover:bg-opacity-80 transition-all duration-300">
+        <p class="md:text-5xl text-3xl font-greatvibes text-lightbrown tracking-wider">добре дојдовте</p>
+        <h1 class="text-lightbrown md:text-7xl text-5xl font-playfair uppercase font-medium">Вкус, забава и летна магија</h1>
+        <a href="menu.html" class="mt-12 main-btn hover:scale-105">
           Погледни мени
         </a>
       </div>
     </div>
-  </section> 
-  <section class="py-24 bg-lightbrown text-center">
+  </section>
+
+  <section id="services" class="md:pt-24 py-12 md:pb-16 bg-lightbrown text-center">
     <div class="md:max-w-screen-xl w-full mx-auto">
-      <p class="text-darkbrown text-2xl md:text-5xl font-greatvibes tracking-wider">услуги</p>
-        
-      <div class="flex items-center w-full pb-14 md:pb-24">
-        <div class="h-[2px] bg-darkbrown flex-1"></div>
-        <h2 class="px-6 text-4xl md:text-6xl font-playfair font-light uppercase text-dark">
+
+      <p class="subtitle">услуги</p>
+      <div class="title-wrapper">
+        <div class="title-line"></div>
+        <h2 class="title">
             Нашата понуда
         </h2>
-        <div class="h-[2px] bg-darkbrown flex-1"></div>
+        <div class="title-line"></div>
       </div>
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-12 justify-center">
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-y-12 gap-x-0 justify-center">
           <div class="flex flex-col items-center">
-              <div class="w-24 h-24 flex items-center justify-center rounded-full border-2 border-darkbrown bg-white shadow-lg">
-                  <img src="img/bday.png" alt="Родендени" class="w-12 h-12">
+              <div class="service-img-wrapper">
+                  <img src="img/bday.png" alt="Родендени" class="w-24 h-24">
               </div>
-              <p class="mt-3 text-xl text-dark font-playfair">Родендени</p>
+              <p class="service-subtitle">Родендени</p>
           </div>
-          <div class="flex flex-col items-center">
-              <div class="w-24 h-24 flex items-center justify-center rounded-full border-2 border-darkbrown bg-white shadow-lg">
-                  <img src="img/krstevka.png" alt="Крштевки" class="w-12 h-12">
+          <div class="service-wrapper">
+              <div class="service-img-wrapper">
+                  <img src="img/krstevka.png" alt="Крштевки" class="w-24 h-24">
               </div>
-              <p class="mt-3 text-xl text-dark font-playfair">Крштевки</p>
+              <p class="service-subtitle">Крштевки</p>
           </div>
-          <div class="flex flex-col items-center">
-              <div class="w-24 h-24 flex items-center justify-center rounded-full border-2 border-darkbrown bg-white shadow-lg">
-                  <img src="img/mekici.png" alt="Мекици" class="w-12 h-12">
+          <div class="service-wrapper">
+              <div class="service-img-wrapper">
+                  <img src="img/mekici.png" alt="Мекици" class="w-24 h-24">
               </div>
-              <p class="mt-3 text-xl text-dark font-playfair">Мекици</p>
+              <p class="service-subtitle">Мекици</p>
           </div>
-          <div class="flex flex-col items-center">
-              <div class="w-24 h-24 flex items-center justify-center rounded-full border-2 border-darkbrown bg-white shadow-lg">
-                  <img src="img/ketering.png" alt="Кетеринг" class="w-12 h-12">
+          <div class="service-wrapper">
+              <div class="service-img-wrapper">
+                  <img src="img/ketering.png" alt="Кетеринг" class="w-24 h-24">
               </div>
-              <p class="mt-3 text-xl text-dark font-playfair">Кетеринг</p>
+              <p class="service-subtitle">Кетеринг</p>
           </div>
-          <div class="flex flex-col items-center">
-              <div class="w-24 h-24 flex items-center justify-center rounded-full border-2 border-darkbrown bg-white shadow-lg">
-                  <img src="img/vencavki.png" alt="Венчавки" class="w-12 h-12">
+          <div class="service-wrapper">
+              <div class="service-img-wrapper">
+                  <img src="img/vencavki.png" alt="Венчавки" class="w-24 h-24">
               </div>
-              <p class="mt-3 text-xl  text-dark font-playfair">Венчавки</p>
+              <p class="service-subtitle">Венчавки</p>
           </div>
-          <div class="flex flex-col items-center">
-              <div class="w-24 h-24 flex items-center justify-center rounded-full border-2 border-darkbrown bg-white shadow-lg">
-                  <img src="img/bazen.png" alt="Базен" class="w-12 h-12">
+          <div class="service-wrapper">
+              <div class="service-img-wrapper">
+                  <img src="img/bazen.png" alt="Базен" class="w-24 h-24">
               </div>
-              <p class="mt-3 text-xl text-dark font-playfair">Базен</p>
+              <p class="service-subtitle">Базен</p>
           </div>
       </div>
     </div>
   </section>
 
+  <section id="gallery" class="py-12 md:py-16 bg-lightbrown text-center">
+    <div class="md:max-w-screen-xl w-full mx-auto">
 
-<section class="lg:py-24 pb-24 bg-lightbrown text-center">
-  <div class="md:max-w-screen-xl w-full mx-auto">
-    <p class="text-darkbrown text-2xl md:text-5xl font-greatvibes tracking-wider">галерија</p>
-      
-    <div class="flex items-center w-full pb-14 md:pb-24">
-      <div class="h-[2px] bg-darkbrown flex-1"></div>
-      <h2 class="px-2 text-4xl md:text-6xl font-playfair font-light uppercase text-dark">
-          Нашата приказна
-      </h2>
-      <div class="h-[2px] bg-darkbrown flex-1"></div>
-    </div>
+      <p class="subtitle">галерија</p>
+      <div class="title-wrapper">
+        <div class="title-line"></div>
+        <h2 class="title">
+            Нашата приказна
+        </h2>
+        <div class="title-line"></div>
+      </div>
 
-    <!-- Gallery Container -->
-    <div id="galleryContainer" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 px-4">
-      <!-- Images will be dynamically inserted here -->
-    </div>
+      <div id="galleryContainer" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 px-4">
+        <!-- Images will be dynamically inserted here -->
+      </div>
 
-    <!-- Show More/Less Button -->
-    <button id="toggleGallery" class="mt-6 px-6 py-2 bg-darkbrown text-white rounded-lg hover:bg-opacity-90 transition-colors hidden">
-      Прикажи повеќе
-    </button>
-  </div>
-
-  <!-- Modal -->
-  <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50">
-    <div class="relative max-w-4xl w-full m-4">
-      <img id="modalImage" src="" alt="Modal Image" class="w-full h-auto rounded-lg">
-      <button id="closeModal" class="absolute top-2 right-2 bg-white rounded-full p-2 text-darkbrown hover:bg-gray-200">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
+      <button id="toggleGallery" class="mt-12 px-6 py-3 uppercase tracking-wide rounded-full bg-dark text-white transition-all duration-300 hover:scale-105 hidden">
+        Прикажи повеќе
       </button>
     </div>
-  </div>
-</section>
 
-<section class="lg:py-24 py-16 bg-lightbrown text-center">
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50">
+      <div class="relative max-w-4xl w-full m-4">
+        <img id="modalImage" src="" alt="Modal Image" class="w-full h-auto">
+        <button id="closeModal" class="absolute top-2 right-2 bg-white rounded-full p-2 text-darkbrown hover:bg-gray-200">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+<section id="about" class="py-12 md:py-16 bg-lightbrown text-center">
   <div class="md:max-w-screen-xl w-full mx-auto px-4">
-    <!-- "За нас" heading -->
-    <p class="text-darkbrown text-2xl md:text-5xl font-greatvibes tracking-wider">за нас</p>
-      
-    <!-- Divider and "Кои сме ние?" heading -->
-    <div class="flex items-center w-full pb-12 md:pb-16">
-      <div class="h-[2px] bg-darkbrown flex-1"></div>
-      <h2 class="px-2 text-4xl md:text-6xl font-playfair font-light uppercase text-dark">
+
+    <p class="subtitle">за нас</p>
+    <div class="title-wrapper">
+      <div class="title-line"></div>
+      <h2 class="title">
           Кои сме ние?
       </h2>
-      <div class="h-[2px] bg-darkbrown flex-1"></div>
+      <div class="title-line"></div>
     </div>
 
-    <!-- Company description -->
     <div class="max-w-3xl mx-auto">
       <p class="text-dark opacity-60 font-mulish italic text-lg md:text-xl leading-relaxed">
         Ние сме компанија посветена на создавање на незаборавни искуства и квалитетни производи. 
@@ -206,27 +193,23 @@
     </div>
   </div>
 </section>
-<!-- Your existing sections (Gallery and About Us) would go here -->
 
-<!-- Contact and Information Section -->
-<section class="lg:py-24 py-16 bg-lightbrown text-center">
+<section id="contact" class="pt-12 md:pt-18 pb-12 md:pb-24 bg-lightbrown text-center">
     <div class="md:max-w-screen-xl w-full mx-auto px-4">
-      <p class="text-darkbrown text-2xl md:text-5xl font-greatvibes tracking-wider">контакт</p>
+      <p class="subtitle">контакт</p>
         
-      <div class="flex items-center w-full pb-12 md:pb-16">
-        <div class="h-[2px] bg-darkbrown flex-1"></div>
-        <h2 class="px-2 text-4xl md:text-6xl font-playfair font-light uppercase text-dark">
+      <div class="title-wrapper">
+        <div class="title-line"></div>
+        <h2 class="title">
             Информации
         </h2>
-        <div class="h-[2px] bg-darkbrown flex-1"></div>
+        <div class="title-line"></div>
       </div>
 
-      <!-- Two-column layout -->
       <div class="flex flex-col lg:flex-row gap-8">
-        <!-- Left Column: Google Map -->
         <div class="w-full lg:w-1/2">
           <iframe 
-            class="w-full h-96 border-2 border-darkbrown rounded-lg" 
+            class="w-full h-96 border-2 border-darkbrown" 
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9958.694418619874!2d21.40407506441319!3d42.09167209017661!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13546b66ef3a969d%3A0xd57ef77cc21508c4!2z0KDQtdGB0YLQvtGA0LDQvSDQodC60LDRmA!5e0!3m2!1smk!2smk!4v1741697628263!5m2!1smk!2smk"
             allowfullscreen="" 
             loading="lazy" 
@@ -239,38 +222,33 @@
           </p>
         </div>
 
-        <!-- Right Column: Contact Information -->
-        <div class="w-full lg:w-1/2 text-left text-darkbrown">
-          <h3 class="text-2xl font-playfair mb-4">Sky Restaurant</h3>
+        <div class="w-full lg:w-1/2 text-left">
+          <h3 class="text-3xl font-playfair text-dark mb-4">Sky Restaurant</h3>
           <div class="space-y-4">
             <p>
-              <span class="font-semibold">Адреса:</span><br>
-              Ул. Македонија бр. 10, 1000 Скопје, Северна Македонија
+              <span class="info-title">Адреса:</span><br>
+              <span class="opacity-80">Мирковци, Чучер-Сандево, Скопје</span>
             </p>
             <p>
-              <span class="font-semibold">Телефон:</span><br>
-              +389 2 123 4567
+              <span class="info-title">Телефон:</span><br>
+              <span class="opacity-80">+389 71 527 184</span>
             </p>
             <p>
-              <span class="font-semibold">Работно време:</span><br>
-              Понеделник - Петок: 10:00 - 23:00<br>
-              Сабота - Недела: 12:00 - 00:00
+              <span class="info-title">Работно време:</span><br>
+              <span class="opacity-80">Понеделник - Недела: 09:00 - 24:00</span> 
             </p>
             <p>
-              <span class="font-semibold">Социјални мрежи:</span><br>
+              <span class="info-title">Социјални мрежи:</span><br>
               <div class="flex gap-4 mt-2">
-                <a href="https://instagram.com/skyrestaurant" target="_blank" class="text-darkbrown hover:text-darkbrown/80 transition-colors">
-                  <!-- <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.02.049 1.717.209 2.328.465a4.69 4.69 0 011.702 1.11 4.69 4.69 0 011.11 1.702c.256.611.416 1.308.465 2.328.047 1.024.06 1.378.06 3.808s-.013 2.784-.06 3.808c-.049 1.02-.209 1.717-.465 2.328a4.69 4.69 0 01-1.11 1.702 4.69 4.69 0 01-1.702 1.11c-.611.256-1.308.416-2.328.465-1.024.047-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.02-.049-1.717-.209-2.328-.465a4.69 4.69 0 01-1.702-1.11 4.69 4.69 0 01-1.11-1.702c-.256-.611-.416-1.308-.465-2.328-.047-1.024-.06-1.378-.06-3.808s.013-2.784.06-3.808c.049-1.02.209-1.717.465-2.328a4.69 4.69 0 011.11-1.702 4.69 4.69 0 011.702-1.11c.611-.256 1.308-.416 2.328-.465 1.024-.047 1.378-.06 3.808-.06zm0-2c-2.56 0-2.914.01-3.94.058-1.064.05-1.79.218-2.427.465a6.69 6.69 0 00-2.427 1.583 6.69 6.69 0 00-1.583 2.427c-.247.637-.415 1.363-.465 2.427C2.01 9.086 2 9.44 2 12s.01 2.914.058 3.94c.05 1.064.218 1.79.465 2.427a6.69 6.69 0 001.583 2.427 6.69 6.69 0 002.427 1.583c.637.247 1.363.415 2.427.465C9.086 21.99 9.44 22 12 22s2.914-.01 3.94-.058c1.064-.05 1.79-.218 2.427-.465a6.69 6.69 0 002.427-1.583 6.69 6.69 0 001.583-2.427c.247-.637.415-1.363.465-2.427.048-1.026.058-1.38.058-3.94s-.01-2.914-.058-3.94c-.05-1.064-.218-1.79-.465-2.427a6.69 6.69 0 00-1.583-2.427 6.69 6.69 0 00-2.427-1.583c-.637-.247-1.363-.415-2.427-.465C14.914 2.01 14.56 2 12 2zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" clip-rule="evenodd"/>
-                  </svg> -->
-                  <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                    <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"></path>
-                    </svg>
-                </a>
-                <a href="https://facebook.com/skyrestaurant" target="_blank" class="text-darkbrown hover:text-darkbrown/80 transition-colors">
-                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
+                <a href="https://www.facebook.com/share/1B3kv8cjQ3/" target="_blank" class="text-dark hover:text-dark/90 transition-colors">
+                  <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V15.47H7.898v-3.47h2.54V9.845c0-2.506 1.492-3.89 3.775-3.89 1.096 0 2.24.195 2.24.195v2.46h-1.262c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 3.47h-2.33v6.408C18.344 21.128 22 16.991 22 12z"/>
                   </svg>
+                </a>
+                <a href="https://www.instagram.com/sky.restaurant.and.pool.bar?igsh=MTQzdWI5eGFwaXE1Ng==" target="_blank" class="text-dark hover:text-dark/90 transition-colors">
+                    <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-2.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
                 </a>
               </div>
             </p>
@@ -278,17 +256,13 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white py-4 text-center">
-  <p>© 2025 Sky Restaurant. Сите права задржани.</p>
-</footer>
-  <h1>Our Menu</h1>
-  <div id="category-container"></div><!-- Latest jQuery 3.x (minified) -->
+  <footer class="bg-dark text-white py-4 text-center">
+    <p>© 2025 Sky Restaurant and Pool bar. Сите права задржани.</p>
+  </footer>
+
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  
-  <!-- Latest jQuery 3.x (full) -->
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>

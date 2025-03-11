@@ -17,19 +17,36 @@
 }
 
 @layer components {
-  .h3-heading{
-    @apply text-3xl md:text-4xl font-playfair font-bold text-gray-900 mt-2 mb-5;
+  .title{
+    @apply px-6 text-4xl md:text-6xl font-playfair font-light uppercase text-dark;
   }
-  .btn-primary {
-      @apply px-12 py-3 border-1 rounded-full text-white uppercase font-light tracking-widest transition duration-300;
+  .subtitle{
+    @apply text-darkbrown text-3xl md:text-5xl font-greatvibes tracking-wider;
   }
-  .btn-secondary{
-    @apply px-12 py-3 border-1 rounded-full text-gray-950 uppercase tracking-widest transition duration-300 bg-gray-100 ;
+  .title-line{
+    @apply h-[2px] bg-darkbrown flex-1;
+  }
+  .title-wrapper{
+    @apply flex items-center w-full pb-12 md:pb-16;
+  }
+  .service-subtitle{
+    @apply mt-3 text-xl text-dark font-mulish font-light tracking-wide;
+  }
+  .service-wrapper{
+    @apply flex flex-col items-center;
+  }
+  .service-img-wrapper{
+      @apply w-36 h-36 flex items-center justify-center rounded-full border-2 border-darkbrown bg-white shadow-lg;
   }
   .animate-bg-slider{
     @apply bg-cover bg-center transition-all duration-[1500ms] ease-in-out transform;
   }
-    
+  .main-btn{
+    @apply inline-block px-6 py-3 uppercase tracking-wide bg-lightbrown text-dark text-lg rounded-full transition-all duration-300;
+  }
+  .info-title{
+    @apply font-bold text-darkbrown tracking-wide;
+  }
 }
 
 @layer utilities {

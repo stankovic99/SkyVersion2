@@ -52,7 +52,7 @@ $(document).ready(function() {
                   <div class="p-4 flex-1">
                       <h3 class="text-lg font-playfair text-darkbrown">${item.name}</h3>
                       <p class="text-sm text-gray-600">${item.description}</p>
-                      <p class="text-darkbrown font-semibold mt-2">${item.price.toFixed(2)} €</p>
+                      <p class="text-darkbrown font-semibold mt-2">${item.price} ден.</p>
                   </div>
               </div>
           `);

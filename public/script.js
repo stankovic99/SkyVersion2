@@ -51,7 +51,8 @@ bg1.classList.add("opacity-100");
 
 //DOM
 document.addEventListener("DOMContentLoaded", function () {
-    const galleryContainer = document.getElementById('galleryContainer');
+  
+  const galleryContainer = document.getElementById('galleryContainer');
   const modal = document.getElementById('imageModal');
   const modalImage = document.getElementById('modalImage');
   const closeModal = document.getElementById('closeModal');
@@ -75,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const img = document.createElement('img');
         img.src = src;
         img.alt = `Gallery Image ${index + 1}`;
-        img.className = 'w-full h-auto border-2 border-darkbrown rounded-lg hover:opacity-80 transition-opacity';
+        img.className = 'w-full h-auto border-2 border-darkbrown hover:opacity-80 transition-opacity';
         
         galleryItem.appendChild(img);
         galleryContainer.appendChild(galleryItem);
