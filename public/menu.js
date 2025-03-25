@@ -59,6 +59,7 @@ $(document).ready(function() {
           $grid.append($item);
       });
   }
+  
 
   // Fetch JSON and initialize
   $.getJSON('menu.json', function(jsonData) {

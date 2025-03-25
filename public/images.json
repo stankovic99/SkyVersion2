@@ -1,21 +1,21 @@
 {
     "images": [
-      "./img/horizontal1.png",
-      "img/horizontal2.png",
-      "img/horizontal3.png",
-      "img/horizontal4.png",
-      "img/horizontal3.png",
-      "img/horizontal3.png",
-      "img/horizontal3.png",
-      "img/horizontal3.png",
-      "img/horizontal3.png",
-      "img/horizontal3.png",
-      "img/horizontal3.png",
-      "img/horizontal3.png",
-      "img/horizontal3.png",
-      "img/horizontal3.png",
-      "img/horizontal3.png",
-      "img/horizontal3.png",
-      "img/horizontal3.png" 
+      "./img/ketering1.jpg",
+      "img/bazen1.jpg",
+      "img/rodenden1.jpg",
+      "img/bazen2.jpg",
+      "img/ketering2.jpg",
+      "img/rodenden2.jpg",
+      "img/rodenden3.jpg",
+      "img/bazen3.jpg",
+      "img/ketering3.jpg",
+      "img/ketering4.jpg",
+      "img/ketering5.jpg",
+      "img/bazen4.jpg",
+      "img/ketering6.jpg",
+      "img/rodenden4.jpg",
+      "img/ketering7.jpg",
+      "img/bazen5.jpg",
+      "img/bazen6.jpg" 
     ]
   }
