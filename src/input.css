@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mulish:wght@400;500&family=Playfair+Display:wght@400;700&subset=cyrillic,latin&display=swap');
 @import "tailwindcss";
 
 @theme{
@@ -6,13 +7,25 @@
   --font-mulish: "Mulish", sans-serif;
   --font-greatvibes: "Great Vibes", cursive;
   --color-lightbrown: #F2EFEB;
-  --color-darkbrown: #C8A97E;
+  --color-darkbrown: #9c7a4e;
   --color-dark: #262626;
 }
 
 @layer base {
   body {
       @apply font-mulish;
+  }
+  main {
+    @apply flex-1;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  ::selection {
+    @apply bg-transparent text-current;
+  }
+  ::-moz-selection {
+    @apply bg-transparent text-current;
   }
 }
 
@@ -29,37 +42,40 @@
   .title-wrapper{
     @apply flex items-center w-full pb-12 md:pb-16;
   }
-  .service-subtitle{
-    @apply mt-3 text-xl text-dark font-mulish font-light tracking-wide;
-  }
   .service-wrapper{
-    @apply flex flex-col items-center;
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
   }
   .service-img-wrapper{
-      @apply w-36 h-36 flex items-center justify-center rounded-full border-2 border-darkbrown bg-white shadow-lg;
+      @apply w-full h-48 object-cover;
+  }
+  .service-title-wrapper{
+      @apply text-2xl font-mulish text-dark mb-2;
+  }
+  .service-subtitle-wrapper{
+      @apply text-dark font-mulish;
+  }
+  .service-button-wrapper{
+      @apply mt-4 px-4 py-2 border-1 rounded-full inline-block text-darkbrown font-mulish transition;
   }
   .animate-bg-slider{
     @apply bg-cover bg-center transition-all duration-[1500ms] ease-in-out transform;
   }
-  .main-btn{
-    @apply inline-block px-6 py-3 uppercase tracking-wide bg-lightbrown text-dark text-lg rounded-full transition-all duration-300;
-  }
   .info-title{
     @apply font-bold text-darkbrown tracking-wide;
   }
-}
-
-@layer utilities {
-  @keyframes scale-loop {
-    0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.05);
-      }
+  .about-content {
+    @apply max-h-0 overflow-hidden transition-all duration-500 md:max-h-full md:block;
   }
-
-  .animate-scale-loop {
-      @apply animate-[scale-loop_20s_infinite_alternate_ease-in-out];
+  .about-content.max-h-0 {
+    @apply max-h-0 overflow-hidden;
+  }
+  .about-content.max-h-\[1000px\] {
+    @apply max-h-[1000px] overflow-visible;
+  }
+  .gallery-item {
+    @apply transition-opacity duration-300;
+  }
+  .gallery-item img {
+    @apply object-cover aspect-square max-h-[300px];
   }
 }
