@@ -63,15 +63,6 @@
   .info-title{
     @apply font-bold text-darkbrown tracking-wide;
   }
-  .about-content {
-    @apply max-h-0 overflow-hidden transition-all duration-500 md:max-h-full md:block;
-  }
-  .about-content.max-h-0 {
-    @apply max-h-0 overflow-hidden;
-  }
-  .about-content.max-h-\[1000px\] {
-    @apply max-h-[1000px] overflow-visible;
-  }
   .gallery-item {
     @apply transition-opacity duration-300;
   }
